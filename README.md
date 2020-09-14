@@ -1,7 +1,7 @@
 # gas_alcohol
 
-[![Série](https://img.shields.io/badge/DevSoutinho-Pokedex-orange)](https://www.youtube.com/watch?v=jOAU81jdi-c&list=PLTcmLKdIkOWmeNferJ292VYKBXydGeDej)
-[![licence mit](https://img.shields.io/github/license/wborbajr/alcohol-gas?style=plastic)](https://github.com/wborbajr/alcohol-gas/blob/master/LICENSE)
+[![Flutter APP](https://https://img.shields.io/badge/wborbajr-Gas%20or%20Alcohol%20APP-blue)]()
+[![licence mit](https://img.shields.io/github/license/wborbajr/alcohol-gas)](https://github.com/wborbajr/alcohol-gas/blob/master/LICENSE)
 
 
 A new Flutter project.
