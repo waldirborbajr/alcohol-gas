@@ -1,6 +1,6 @@
 # gas_alcohol
 
-[![Flutter APP](https://https://img.shields.io/badge/wborbajr-Gas%20or%20Alcohol%20APP-blue)]()
+[![Flutter APP](https://img.shields.io/badge/wborbajr-Gas%20or%20Alcohol%20APP-blue)]()
 [![licence mit](https://img.shields.io/github/license/wborbajr/alcohol-gas)](https://github.com/wborbajr/alcohol-gas/blob/master/LICENSE)
 
 
