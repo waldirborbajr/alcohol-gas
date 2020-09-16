@@ -2,51 +2,19 @@ name: Dart CI Test, build and deploy
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   build:
-#The type of machine to run the job on. [windows,macos, ubuntu , self-hosted]
+    #The type of machine to run the job on. [windows,macos, ubuntu , self-hosted]
     # runs-on: macos-latest
     runs-on: ubuntu-latest
-    #container:
-     # image: google/dart:latest
+    container:
+      image: google/dart:latest
 
     steps:
-# The branch or tag ref that triggered the workflow will be checked out.
-# https://github.com/actions/checkout
-    - uses: actions/checkout@v1
-    - name: Setup Java JDK
-      uses: actions/setup-java@v1.4.1
-      with:
-        # The Java version to make available on the path. Takes a whole or semver Java version, or 1.x syntax (e.g. 1.8 => Java 8.x). Early access versions can be specified in the form of e.g. 14-ea, 14.0.0-ea, or 14.0.0-ea.28
-        java-version: '12.x'
-  # Setup a flutter environment.
-  # https://github.com/marketplace/actions/flutter-action
-    - uses: subosito/flutter-action@v1
-      with:
-        #flutter-version: '1.20.2'
-        flutter-version: '1.9.1+hotfix.6'
-        #channel: 'dev'
-    - run: flutter upgrade
-    - run: flutter pub get
-    - run: flutter  analyze
-    # run  flutter widgets tests  and unit tests
-    # - run: flutter test --coverage
-    - run: flutter test test/unit_test.dart
-    - run: flutter test test/widget_test.dart
-    # - run: flutter build apk --split-per-abi
-    # - name: Release apk
-    #   uses: ncipollo/release-action@v1
-    #   with:
-    #     artifacts: "build/app/outputs/apk/release/*.apk"
-
-    # Upload coverage reports to Codecov
-      # https://github.com/marketplace/actions/codecov
-    # - name: Upload coverage to Codecov
-    #   uses: codecov/codecov-action@v1.0.13
-    #   with:
-    #     #token: ${{ secrets.CODECOV_TOKEN }}
-    #     file: coverage/lcov.info
+      # The branch or tag ref that triggered the workflow will be checked out.
+      # https://github.com/actions/checkout
+      - uses: actions/checkout@v2
