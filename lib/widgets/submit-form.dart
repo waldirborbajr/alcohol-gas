@@ -10,11 +10,12 @@ class SubmitForm extends StatelessWidget {
   var busy = false;
   Function submitFunc;
 
-  SubmitForm(
-      {@required this.gasCtrl,
-      @required this.alcCtrl,
-      @required this.busy,
-      @required this.submitFunc});
+  SubmitForm({
+    @required this.gasCtrl,
+    @required this.alcCtrl,
+    @required this.busy,
+    @required this.submitFunc,
+  });
 
   @override
   Widget build(BuildContext context) {
