@@ -11,10 +11,10 @@ class SubmitForm extends StatelessWidget {
   Function submitFunc;
 
   SubmitForm({
-    @required this.gasCtrl,
-    @required this.alcCtrl,
-    @required this.busy,
-    @required this.submitFunc,
+    required this.gasCtrl,
+    required this.alcCtrl,
+    required this.busy,
+    required this.submitFunc,
   });
 
   @override

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:flutter_masked_text/flutter_masked_text.dart';
-import 'package:gas_alcohol/widgets/logo.widget.dart';
-import 'package:gas_alcohol/widgets/submit-form.dart';
-import 'package:gas_alcohol/widgets/sucess.widget.dart';
+import 'package:gasalcohol/widgets/logo.widget.dart';
+import 'package:gasalcohol/widgets/submit-form.dart';
+import 'package:gasalcohol/widgets/sucess.widget.dart';
 
 class GAHomePage extends StatefulWidget {
   // controller to mask money

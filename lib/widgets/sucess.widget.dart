@@ -6,7 +6,7 @@ class Success extends StatelessWidget {
   var result = "";
   Function reset;
 
-  Success({@required this.result, @required this.reset});
+  Success({required this.result, required this.reset});
 
   @override
   Widget build(BuildContext context) {

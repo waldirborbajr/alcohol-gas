@@ -7,10 +7,10 @@ class LoadingButton extends StatelessWidget {
   var text = "";
 
   LoadingButton({
-    @required this.busy,
-    @required this.invert,
-    @required this.func,
-    @required this.text,
+    required this.busy,
+    required this.invert,
+    required this.func,
+    required this.text,
   });
 
   @override
@@ -41,7 +41,7 @@ class LoadingButton extends StatelessWidget {
                     fontSize: 25,
                     fontFamily: "Big Shoulders Display"),
               ),
-              onPressed: func,
+              onPressed: func as void Function()?,
             ),
           );
   }

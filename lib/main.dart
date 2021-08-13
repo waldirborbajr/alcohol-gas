@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gas_alcohol/pages/home.page.dart';
+import 'package:gasalcohol/pages/home.page.dart';
 
 void main() {
   runApp(MyApp());

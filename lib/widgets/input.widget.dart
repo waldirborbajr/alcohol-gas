@@ -5,7 +5,7 @@ class Input extends StatelessWidget {
   var label = "";
   var ctrl = new MoneyMaskedTextController();
 
-  Input({@required this.label, @required this.ctrl});
+  Input({required this.label, required this.ctrl});
 
   @override
   Widget build(BuildContext context) {
